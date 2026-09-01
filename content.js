@@ -188,7 +188,7 @@ window.CONTENT_DATA = {
     {
       "id": "arcadia",
       "title": "Arcadia Untitled AAA",
-      "desc": "<p>My first industry role - Arcadia Games' Israeli art team, working on an unannounced AAA project for a Disney IP. We catalogued and repaired the franchise's 3D asset library, then started developing character concepts to help shape the art direction for the main U.S. team.</p>",
+      "desc": "<p>My first industry role - Arcadia Games' Israeli art team, working on an unannounced AAA project for a major licensed IP. We catalogued and repaired the franchise's 3D asset library, then started developing character concepts to help shape the art direction for the main U.S. team.</p>",
       "sections": [
         {
           "id": "arcadia-sulley",
@@ -780,7 +780,7 @@ window.CONTENT_DATA = {
     ".cv-entry-org#1": "\n                  <img class=\"cv-org-logo cv-org-logo--screen\" src=\"media/site/cloverbite_logo.webp\" alt=\"Clover Bite\" contenteditable=\"false\">\n                  Clover Bite&nbsp;",
     ".cv-entry-org#3": "\n                  <img class=\"cv-org-logo cv-org-logo--pill\" src=\"media/site/tiltan_logo.webp\" alt=\"Tiltan\" contenteditable=\"false\">\n                  Tiltan School of Design &amp; Visual Communication",
     ".cv-entry-desc#0": "Generalist 3D workflows: modeling, UV unwrapping, texturing, rigging, animation, shaders, render &amp; lighting. Covered Unity and Unreal Engine basics, 2D design, illustration, UI/UX, and Art theory.",
-    ".cv-entry-bullets li#6": "Reviewed, repaired, and catalogued 3D assets from an archived Disney-IP franchise project.",
+    ".cv-entry-bullets li#6": "Reviewed, repaired, and catalogued 3D assets from an archived licensed-IP franchise project.",
     ".cv-entry-bullets li#7": "Developed character concept models exploring the art direction for the U.S. art team.",
     ".cv-entry-title#1": "3D Generalist",
     ".cv-entry-date#0": "Jun 2024 - 2026",
