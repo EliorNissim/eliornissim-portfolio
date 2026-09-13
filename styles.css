@@ -15,9 +15,9 @@
   --text-secondary:oklch(78% 0.008 70);   /* was 65% - 5.96:1, now ~9.5:1 */
   --text-muted:    oklch(64% 0.008 65);   /* was 45% - failed AA at 2.59:1 */
 
-  --accent-cyan:   oklch(72% 0.18 195);
+  --accent-cyan:   #40a080;              /* shirt green from the portrait illustration */
   --accent-gold:   oklch(75% 0.16 75);
-  --accent-cyan-dim: oklch(72% 0.18 195 / 0.15);
+  --accent-cyan-dim: rgba(64, 160, 128, 0.15);
   --accent-gold-dim: oklch(75% 0.16 75  / 0.12);
 
   --header-h:      64px;
@@ -563,7 +563,7 @@ img, video { max-width: 100%; display: block; }
 .media-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 16px 48px oklch(0% 0 0 / 0.5), 0 0 0 1px var(--accent-cyan-dim);
-  border-color: oklch(35% 0.04 195);
+  border-color: rgba(64, 160, 128, 0.55);
 }
 
 .media-thumb {
@@ -988,7 +988,7 @@ img, video { max-width: 100%; display: block; }
   transition: border-color 0.2s, transform 0.2s;
 }
 .sw-item:hover .sw-icon-wrap {
-  border-color: oklch(35% 0.04 195);
+  border-color: rgba(64, 160, 128, 0.55);
   transform: translateY(-2px);
 }
 .sw-icon-wrap img,
@@ -1420,7 +1420,7 @@ body.edit-mode [contenteditable="true"] {
 
 body.edit-mode [contenteditable="true"]:focus {
   outline-style: solid;
-  background: rgba(0, 212, 200, 0.05);
+  background: rgba(64, 160, 128, 0.06);
 }
 
 body.edit-mode .media-card {

@@ -320,8 +320,8 @@ window.CONTENT_DATA = {
     },
     {
       "id": "other",
-      "title": "Other Projects",
-      "desc": "<p>Client and studio work from my years at Clover Bite - 3D models, environments, UI implementation and tech art in Maya and Unity.</p>",
+      "title": "Simulators & Other",
+      "desc": "<p>Client and studio work from my years at Clover Bite - 3D models, terrain building, environment assets, UI implementation and tech art in Maya and Unity.</p>",
       "sections": [
         {
           "id": "other-educoop",
@@ -767,7 +767,7 @@ window.CONTENT_DATA = {
       "y": -238,
       "h": 384
     },
-    "bio1": "I started as a 3D artist at Clover Bite, working on client projects, mostly semi-realistic simulators, and several mobile game prototypes.<div><b>Went through most of the 3D pipeline - 3D modeling, <br>UVs, textures, VFX and animations</b></div>",
+    "bio1": "I started as a 3D artist at Clover Bite, working on client projects, mostly semi-realistic simulators, and several mobile game prototypes.<div><b>Went through most of the 3D pipeline - 3D modeling, Terrain & Environments, <br>UVs, textures, VFX and animations</b></div>",
     "bio2": "For the last 2 years, I formed and led a team inside CB -&nbsp;<br>Developing <i style=\"\">Once a Pawn a King, </i>our debut game for Steam.",
     "bio3": "Unfortunately, the studio recently closed and the team was let go :( <br><b style=\"\">Now I'm looking for my next place to make great games!</b>",
     "cvPortrait": {
@@ -783,9 +783,9 @@ window.CONTENT_DATA = {
     ".cv-entry-bullets li#6": "Reviewed, repaired, and catalogued 3D assets from an archived licensed-IP franchise project.",
     ".cv-entry-bullets li#7": "Developed character concept models exploring the art direction for the U.S. art team.",
     ".cv-entry-title#1": "3D Generalist",
-    ".cv-entry-date#0": "Jun 2024 - 2026",
-    ".cv-entry-date#1": "2022 - 2023",
-    ".cv-entry-bullets li#3": "Character modeling and texturing (primarily human characters) + Environment assets creation and Unity scene building.",
+    ".cv-entry-date#0": "Jun 2024 - Jun 2026",
+    ".cv-entry-date#1": "Jul 2022 - May 2023",
+    ".cv-entry-bullets li#3": "Character modeling and texturing (primarily human characters) + Environment assets creation and Unity terrains and level design.",
     ".cv-entry-bullets li#2": "Shipped Once a Pawn a King on Steam.",
     ".cv-entry-bullets li#1": "Indie production including development of the game + promotional materials and publisher talks.",
     ".cv-entry-bullets li#0": "Formed and led the core team as team lead / producer, I was also in charge of 3D character art, environments, animations and VFX.",

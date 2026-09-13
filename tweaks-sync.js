@@ -5,7 +5,7 @@
 
 (function() {
   const TWEAK_DEFAULTS = {
-    accentCyan: '#00d4c8',
+    accentCyan: '#40a080',
     heroLayout: 'center',
     grain: true,
     glow: true,
@@ -48,17 +48,16 @@
     });
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener("DOMContentLoaded", function() {
     const t = getTweaks();
-    applyAccent(t.accentCyan);
+    // accent is brand-fixed in styles.css now - never overridden from storage
     applyGrain(t.grain);
     applyGlow(t.glow);
     applyCols(t.cols);
   });
 
-  // Apply accent immediately before DOMContentLoaded for no-flash
-  const t = getTweaks();
-  applyAccent(t.accentCyan);
+  // Accent colour lives in styles.css (--accent-cyan). Deliberately not applied
+  // from localStorage any more: a stale stored value would resurrect the old cyan.
 
   window.eliorTweaks = { getTweaks, applyAccent, applyGrain, applyGlow, applyCols };
 })();
