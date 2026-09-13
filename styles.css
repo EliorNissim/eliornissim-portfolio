@@ -16,9 +16,9 @@
   --text-muted:    oklch(64% 0.008 65);   /* was 45% - failed AA at 2.59:1 */
 
   --accent-cyan:   #40a080;              /* shirt green from the portrait illustration */
-  --accent-gold:   oklch(75% 0.16 75);
+  --accent-gold:   #ea7800;              /* Blender orange, sampled from Blender.svg */
   --accent-cyan-dim: rgba(64, 160, 128, 0.15);
-  --accent-gold-dim: oklch(75% 0.16 75  / 0.12);
+  --accent-gold-dim: rgba(234, 120, 0, 0.12);
 
   --header-h:      64px;
   --radius:        6px;

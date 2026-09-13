@@ -784,7 +784,7 @@ window.CONTENT_DATA = {
     ".cv-entry-bullets li#7": "Developed character concept models exploring the art direction for the U.S. art team.",
     ".cv-entry-title#1": "3D Generalist",
     ".cv-entry-date#0": "Jun 2024 - Jun 2026",
-    ".cv-entry-date#1": "Jul 2022 - May 2023",
+    ".cv-entry-date#1": "Jul 2022 - May 2024",
     ".cv-entry-bullets li#3": "Character modeling and texturing (primarily human characters) + Environment assets creation and Unity terrains and level design.",
     ".cv-entry-bullets li#2": "Shipped Once a Pawn a King on Steam.",
     ".cv-entry-bullets li#1": "Indie production including development of the game + promotional materials and publisher talks.",
