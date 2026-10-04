@@ -5,18 +5,18 @@ window.CONTENT_DATA = {
     {
       "id": "oapak",
       "title": "Once a Pawn a King",
-      "desc": "<p>A Turn-Based Roguelike based on chess. My primary project for the last two years. <br>I formed and led the team from first concept as team lead / producer, while being responsible for character models, environments, animations, VFX and UI implementation in Unity.</p>",
+      "desc": "<p>A chess-based turn-based roguelike and my main project for two years. <br>I formed and led the team as lead / producer, and owned character models, environments, animations, VFX and UI in Unity.</p>",
       "sections": [
         {
           "id": "oapak-characters",
           "title": "3D Characters",
-          "desc": "<p>The piece characters, bosses and mini bosses, all modeled in Maya and hand textured in Procreate. Rendered and Outlined in Unity.</p>",
+          "desc": "<p>Pieces, bosses and mini-bosses - modeled in Maya, hand-textured in Procreate, outlined in Unity.</p>",
           "items": [
             {
               "id": "oapak-pieces",
               "type": "video",
               "src": "media/once-a-pawn-a-king/3d-characters/pieces_turns.mp4",
-              "desc": "<p>Turnarounds of the standard chess pieces roster.</p>",
+              "desc": "<p>Standard piece turnarounds.</p>",
               "software": [
                 "maya",
                 "unity",
@@ -27,7 +27,7 @@ window.CONTENT_DATA = {
               "id": "oapak-unique-pieces",
               "type": "video",
               "src": "media/once-a-pawn-a-king/3d-characters/unique_pieces_turns.mp4",
-              "desc": "<p>Turnarounds of the unique hero pieces.</p>",
+              "desc": "<p>Hero piece turnarounds.</p>",
               "software": [
                 "maya",
                 "unity",
@@ -38,7 +38,7 @@ window.CONTENT_DATA = {
               "id": "oapak-boss1",
               "type": "video",
               "src": "media/once-a-pawn-a-king/3d-characters/boss001.mp4",
-              "desc": "<p>Pawnathan - Boss character turnaround</p>",
+              "desc": "<p>Pawnathan - boss turnaround</p>",
               "software": [
                 "maya",
                 "unity",
@@ -49,7 +49,7 @@ window.CONTENT_DATA = {
               "id": "oapak-boss2",
               "type": "video",
               "src": "media/once-a-pawn-a-king/3d-characters/boss002.mp4",
-              "desc": "<p>Bishoper - Boss character turnaround</p>",
+              "desc": "<p>Bishoper - boss turnaround</p>",
               "software": [
                 "maya",
                 "unity",
@@ -60,7 +60,7 @@ window.CONTENT_DATA = {
               "id": "oapak-cav1",
               "type": "video",
               "src": "media/once-a-pawn-a-king/3d-characters/cav001.mp4",
-              "desc": "<p>Cavalier mini boss turnaround</p>",
+              "desc": "<p>Cavalier mini-boss turnaround</p>",
               "software": [
                 "maya",
                 "unity",
@@ -71,7 +71,7 @@ window.CONTENT_DATA = {
               "id": "oapak-cav2",
               "type": "video",
               "src": "media/once-a-pawn-a-king/3d-characters/cav002.mp4",
-              "desc": "<p>Cavalier mini boss turnaround</p>",
+              "desc": "<p>Cavalier mini-boss turnaround</p>",
               "software": [
                 "maya",
                 "unity",
@@ -83,14 +83,14 @@ window.CONTENT_DATA = {
         {
           "id": "oapak-animations",
           "title": "Animations",
-          "desc": "<p>Character animation work for gameplay, made with Unity’s Animator + Blend shape animations for more organic features. <br>I also animated title cards introducing unique pieces, and edited the release trailer.</p>",
+          "desc": "<p>Gameplay animation in Unity's Animator with blend shapes for organic motion. <br>Also animated the hero title cards and cut the release trailer.</p>",
           "items": [
             {
               "id": "oapak-pawnjamin-card",
               "type": "video",
               "src": "media/once-a-pawn-a-king/animations/pawnjamin_titlecard_compressed.mp4",
               "poster": "media/site/thumbnails/pawnjamin.webp",
-              "desc": "<p>Pawnjamin title card - animated introduction sequence.</p>",
+              "desc": "<p>Pawnjamin title card.</p>",
               "software": [
                 "unity",
                 "davinci"
@@ -101,7 +101,7 @@ window.CONTENT_DATA = {
               "type": "video",
               "src": "media/once-a-pawn-a-king/animations/pawnelope_titlecard_compressed2.mp4",
               "poster": "media/site/thumbnails/pawnelope.webp",
-              "desc": "<p>Pawnelope title card - animated introduction sequence.</p>",
+              "desc": "<p>Pawnelope title card.</p>",
               "software": [
                 "unity",
                 "davinci"
@@ -112,7 +112,7 @@ window.CONTENT_DATA = {
               "type": "video",
               "src": "media/once-a-pawn-a-king/animations/nathaniel_card_01_comp.mp4",
               "poster": "media/site/thumbnails/nathaniel.webp",
-              "desc": "<p>Nathaniel title card - animated introduction sequence.</p>",
+              "desc": "<p>Nathaniel title card.</p>",
               "software": [
                 "unity",
                 "davinci"
@@ -123,7 +123,7 @@ window.CONTENT_DATA = {
               "type": "video",
               "src": "media/once-a-pawn-a-king/animations/oapak_trailer.mp4",
               "poster": "media/site/thumbnails/trailer.webp",
-              "desc": "<p>Official game trailer.</p>",
+              "desc": "<p>Release trailer.</p>",
               "software": [
                 "davinci"
               ]
@@ -132,7 +132,7 @@ window.CONTENT_DATA = {
               "id": "oapak-pieces-anims",
               "type": "video",
               "src": "media/once-a-pawn-a-king/animations/pieces_animations.mp4",
-              "desc": "<p>Animations of the standard pieces - movement, attacks and captures.</p>",
+              "desc": "<p>Standard pieces - move, attack, capture.</p>",
               "software": [
                 "unity"
               ]
@@ -141,7 +141,7 @@ window.CONTENT_DATA = {
               "id": "oapak-boss-anims",
               "type": "video",
               "src": "media/once-a-pawn-a-king/animations/boss_animations.mp4",
-              "desc": "<p>Boss animation set - attacks, idles and reactions, animated in Unity with the addition of Blend Shapes.</p>",
+              "desc": "<p>Boss set - attacks, idles, reactions. Unity + blend shapes.</p>",
               "software": [
                 "unity",
                 "maya"
@@ -152,13 +152,13 @@ window.CONTENT_DATA = {
         {
           "id": "oapak-vfx",
           "title": "VFX",
-          "desc": "<p>Real-time visual effects built with Unity Shader Graph and Particle Systems.</p>",
+          "desc": "<p>Real-time VFX in Unity Shader Graph and Particle Systems.</p>",
           "items": [
             {
               "id": "oapak-vfx2",
               "type": "video",
               "src": "media/once-a-pawn-a-king/vfxs-vids/vfx_002.mp4",
-              "desc": "Several effects using 3D models and Particles, for more \"physical\" feeling.",
+              "desc": "Mesh + particle effects for a more physical feel.",
               "software": [
                 "unity"
               ]
@@ -176,7 +176,7 @@ window.CONTENT_DATA = {
               "id": "oapak-vfx3",
               "type": "video",
               "src": "media/once-a-pawn-a-king/vfxs-vids/vfx_003.mp4",
-              "desc": "<p>Some of the pieces Blessings and Curses effects.</p>",
+              "desc": "<p>Blessing and Curse effects.</p>",
               "software": [
                 "unity"
               ]
@@ -188,18 +188,18 @@ window.CONTENT_DATA = {
     {
       "id": "arcadia",
       "title": "Arcadia Untitled AAA",
-      "desc": "<p>My first industry role - Arcadia Games' Israeli art team, working on an unannounced AAA project for a major licensed IP. We catalogued and repaired the franchise's 3D asset library, then started developing character concepts to help shape the art direction for the main U.S. team.</p>",
+      "desc": "<p>My first industry role, on Arcadia Games' Israeli team for an unannounced AAA licensed-IP project. We catalogued and repaired the franchise's 3D asset library, then explored character concepts to help shape art direction for the U.S. team.</p>",
       "sections": [
         {
           "id": "arcadia-sulley",
           "title": "Character Concept",
-          "desc": "<p>Concept work for a character, reworking model and sculpture, and concept animations for movement and framing.</p>",
+          "desc": "<p>Character concept - model and sculpt rework, plus concept animations for movement and framing.</p>",
           "items": [
             {
               "id": "arcadia-sulley-cooking",
               "type": "video",
               "src": "media/arcadia-untitled-aaa/sulley-character/sulley_cooking_anim_04.mp4",
-              "desc": "<p>Cooking animation loop - full-body character performance.</p>",
+              "desc": "<p>Cooking loop.</p>",
               "software": [
                 "maya"
               ]
@@ -208,7 +208,7 @@ window.CONTENT_DATA = {
               "id": "arcadia-sulley-fishing",
               "type": "video",
               "src": "media/arcadia-untitled-aaa/sulley-character/sulley_fishing_loops_02.mp4",
-              "desc": "<p>Fishing animation loops.</p>",
+              "desc": "<p>Fishing loops.</p>",
               "software": [
                 "maya"
               ]
@@ -217,7 +217,7 @@ window.CONTENT_DATA = {
               "id": "arcadia-sulley-retopo",
               "type": "image",
               "src": "media/arcadia-untitled-aaa/sulley-character/sp_retopo_01.webp",
-              "desc": "<p>High details sculpture.</p>",
+              "desc": "<p>High-detail sculpt.</p>",
               "software": [
                 "zbrush"
               ]
@@ -236,13 +236,13 @@ window.CONTENT_DATA = {
         {
           "id": "arcadia-balloon",
           "title": "Balloon Cart",
-          "desc": "<p>A stylized balloon cart prop - modeled, textured and presented in turntable render.</p>",
+          "desc": "<p>Stylized balloon cart prop - modeled, textured, turntable render.</p>",
           "items": [
             {
               "id": "arcadia-balloon1",
               "type": "video",
               "src": "media/arcadia-untitled-aaa/baloon-cart/balloon_cart_render_01.mp4",
-              "desc": "<p>Balloon cart turntable - full prop with materials and lighting pass.</p>",
+              "desc": "<p>Full turntable with materials and lighting.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -252,7 +252,7 @@ window.CONTENT_DATA = {
               "id": "arcadia-balloon2",
               "type": "video",
               "src": "media/arcadia-untitled-aaa/baloon-cart/balloon_cart_render_02.mp4",
-              "desc": "<p>Balloon cart detail render - close-up pass over materials and texture work.</p>",
+              "desc": "<p>Close-up material and texture pass.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -263,13 +263,13 @@ window.CONTENT_DATA = {
         {
           "id": "arcadia-wagon",
           "title": "Wagon",
-          "desc": "<p>A wooden wagon prop - beauty renders alongside the wireframe and normal-map breakdowns.</p>",
+          "desc": "<p>Wooden wagon prop - beauty renders, wireframe and normal-map breakdown.</p>",
           "items": [
             {
               "id": "arcadia-wagon1",
               "type": "image",
               "src": "media/arcadia-untitled-aaa/wagon/001.webp",
-              "desc": "<p>Wagon beauty render - final textured prop.</p>",
+              "desc": "<p>Beauty render.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -279,7 +279,7 @@ window.CONTENT_DATA = {
               "id": "arcadia-wagon-wf",
               "type": "image",
               "src": "media/arcadia-untitled-aaa/wagon/001_wf.webp",
-              "desc": "<p>Wireframe view - topology breakdown of the wagon mesh.</p>",
+              "desc": "<p>Wireframe / topology.</p>",
               "software": [
                 "maya"
               ]
@@ -288,7 +288,7 @@ window.CONTENT_DATA = {
               "id": "arcadia-wagon-nm",
               "type": "image",
               "src": "media/arcadia-untitled-aaa/wagon/001_nm.webp",
-              "desc": "<p>Normal map bake - high-poly detail projected onto the game mesh.</p>",
+              "desc": "<p>Normal-map bake from the high-poly.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -298,7 +298,7 @@ window.CONTENT_DATA = {
               "id": "arcadia-wagon2",
               "type": "image",
               "src": "media/arcadia-untitled-aaa/wagon/002.webp",
-              "desc": "<p>Wagon render - alternate angle.</p>",
+              "desc": "<p>Alternate angle.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -308,7 +308,7 @@ window.CONTENT_DATA = {
               "id": "arcadia-wagon3",
               "type": "image",
               "src": "media/arcadia-untitled-aaa/wagon/003.webp",
-              "desc": "<p>Wagon render - alternate angle.</p>",
+              "desc": "<p>Alternate angle.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -321,18 +321,18 @@ window.CONTENT_DATA = {
     {
       "id": "other",
       "title": "Simulators & Other",
-      "desc": "<p>Client and studio work from my years at Clover Bite - 3D models, terrain building, environment assets, UI implementation and tech art in Maya and Unity.</p>",
+      "desc": "<p>Client and studio work at Clover Bite - 3D models, terrain, environment assets, UI and tech art in Maya and Unity.</p>",
       "sections": [
         {
           "id": "other-educoop",
           "title": "Educational COOP Game",
-          "desc": "<p>A team-based educational game built to teach cooperation. I created its eight island levels with Unity terrain tools - terraforming, level design and population - plus customizable characters, collectible prizes and other gameplay assets.</p>",
+          "desc": "<p>A team-based educational game about cooperation. I built its eight island levels with Unity terrain tools - terraforming, level design and population - plus customizable characters, prizes and gameplay assets.</p>",
           "items": [
             {
               "id": "educoop-01",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/001.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -343,7 +343,7 @@ window.CONTENT_DATA = {
               "id": "educoop-02",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/002.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -354,7 +354,7 @@ window.CONTENT_DATA = {
               "id": "educoop-03",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/003.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -365,7 +365,7 @@ window.CONTENT_DATA = {
               "id": "educoop-04",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/004.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -376,7 +376,7 @@ window.CONTENT_DATA = {
               "id": "educoop-05",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/005.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -387,7 +387,7 @@ window.CONTENT_DATA = {
               "id": "educoop-06",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/006.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -398,7 +398,7 @@ window.CONTENT_DATA = {
               "id": "educoop-07",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/007.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -409,7 +409,7 @@ window.CONTENT_DATA = {
               "id": "educoop-08",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/008.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -420,7 +420,7 @@ window.CONTENT_DATA = {
               "id": "educoop-09",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/009.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -431,7 +431,7 @@ window.CONTENT_DATA = {
               "id": "educoop-10",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/010.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -442,7 +442,7 @@ window.CONTENT_DATA = {
               "id": "educoop-11",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/011.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -453,7 +453,7 @@ window.CONTENT_DATA = {
               "id": "educoop-12",
               "type": "image",
               "src": "media/other-projects/educational-coop-game/012.webp",
-              "desc": "<p>Island level - terraforming, dressing and population in Unity.</p>",
+              "desc": "<p>Island level - Unity terrain, dressing, population.</p>",
               "software": [
                 "unity",
                 "maya",
@@ -492,7 +492,7 @@ window.CONTENT_DATA = {
         {
           "id": "other-medsim",
           "title": "Medical Services Simulator",
-          "desc": "<p>A training simulator for a national emergency medical service, preparing crews for large-scale incidents. I modeled and adapted patient and medic characters, vehicles and city environments - apartments, a train station, hospitals - in Maya, Substance Painter and Photoshop, implemented in Unity.</p>",
+          "desc": "<p>A training simulator for a national EMS, preparing crews for mass-casualty incidents. I modeled patients, medics, vehicles and city environments - apartments, a train station, hospitals - in Maya, Substance Painter and Photoshop, implemented in Unity.</p>",
           "items": [
             {
               "id": "medsim-amb-nav",
@@ -525,7 +525,7 @@ window.CONTENT_DATA = {
               "id": "medsim-01",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/01.webp",
-              "desc": "<p>Simulator scene - environment and asset work in Unity.</p>",
+              "desc": "<p>Simulator scene - environment and assets.</p>",
               "software": [
                 "unity",
                 "maya"
@@ -535,7 +535,7 @@ window.CONTENT_DATA = {
               "id": "medsim-001",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/001.webp",
-              "desc": "<p>Simulator scene - environment and asset work in Unity.</p>",
+              "desc": "<p>Simulator scene - environment and assets.</p>",
               "software": [
                 "unity",
                 "maya"
@@ -545,7 +545,7 @@ window.CONTENT_DATA = {
               "id": "medsim-002",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/002.webp",
-              "desc": "<p>Simulator scene - environment and asset work in Unity.</p>",
+              "desc": "<p>Simulator scene - environment and assets.</p>",
               "software": [
                 "unity",
                 "maya"
@@ -555,7 +555,7 @@ window.CONTENT_DATA = {
               "id": "medsim-bg",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/bg_b_002.webp",
-              "desc": "<p>Simulator scene - environment and asset work in Unity.</p>",
+              "desc": "<p>Simulator scene - environment and assets.</p>",
               "software": [
                 "unity",
                 "maya"
@@ -565,7 +565,7 @@ window.CONTENT_DATA = {
               "id": "medsim-f1825",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/f1825_001.webp",
-              "desc": "<p>Patient character - modeled and textured for the medical scenarios.</p>",
+              "desc": "<p>Patient character - modeled and textured.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -575,7 +575,7 @@ window.CONTENT_DATA = {
               "id": "medsim-f6875",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/f6875_002.webp",
-              "desc": "<p>Patient character - modeled and textured for the medical scenarios.</p>",
+              "desc": "<p>Patient character - modeled and textured.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -585,7 +585,7 @@ window.CONTENT_DATA = {
               "id": "medsim-k0810",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/k0810_001.webp",
-              "desc": "<p>Patient character - modeled and textured for the medical scenarios.</p>",
+              "desc": "<p>Patient character - modeled and textured.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -595,7 +595,7 @@ window.CONTENT_DATA = {
               "id": "medsim-m6875",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/m6875_001.webp",
-              "desc": "<p>Patient character - modeled and textured for the medical scenarios.</p>",
+              "desc": "<p>Patient character - modeled and textured.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -605,7 +605,7 @@ window.CONTENT_DATA = {
               "id": "medsim-ow1",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/ow_01.webp",
-              "desc": "<p>Simulator scene - environment and asset work in Unity.</p>",
+              "desc": "<p>Simulator scene - environment and assets.</p>",
               "software": [
                 "unity",
                 "maya"
@@ -615,7 +615,7 @@ window.CONTENT_DATA = {
               "id": "medsim-ow2",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/ow_02.webp",
-              "desc": "<p>Simulator scene - environment and asset work in Unity.</p>",
+              "desc": "<p>Simulator scene - environment and assets.</p>",
               "software": [
                 "unity",
                 "maya"
@@ -625,7 +625,7 @@ window.CONTENT_DATA = {
               "id": "medsim-p001",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/p001.webp",
-              "desc": "<p>Simulator scene - environment and asset work in Unity.</p>",
+              "desc": "<p>Simulator scene - environment and assets.</p>",
               "software": [
                 "unity",
                 "maya"
@@ -635,7 +635,7 @@ window.CONTENT_DATA = {
               "id": "medsim-ts",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/ts001.webp",
-              "desc": "<p>Simulator scene - environment and asset work in Unity.</p>",
+              "desc": "<p>Simulator scene - environment and assets.</p>",
               "software": [
                 "unity",
                 "maya"
@@ -645,7 +645,7 @@ window.CONTENT_DATA = {
               "id": "medsim-ppack2",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/med_pat_ppack_012.webp",
-              "desc": "<p>Medical equipment pack - props modeled and textured for the training scenarios.</p>",
+              "desc": "<p>Medical equipment props.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -655,7 +655,7 @@ window.CONTENT_DATA = {
               "id": "medsim-ppack1",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/med_pat_ppack_01.webp",
-              "desc": "<p>Medical equipment pack - props modeled and textured for the training scenarios.</p>",
+              "desc": "<p>Medical equipment props.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -665,7 +665,7 @@ window.CONTENT_DATA = {
               "id": "medsim-packs1",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/packs_001.webp",
-              "desc": "<p>Medical equipment pack - props modeled and textured for the training scenarios.</p>",
+              "desc": "<p>Medical equipment props.</p>",
               "software": [
                 "maya"
               ]
@@ -674,7 +674,7 @@ window.CONTENT_DATA = {
               "id": "medsim-packs2",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/packs_002.webp",
-              "desc": "<p>Medical equipment pack - props modeled and textured for the training scenarios.</p>",
+              "desc": "<p>Medical equipment props.</p>",
               "software": [
                 "maya"
               ]
@@ -683,7 +683,7 @@ window.CONTENT_DATA = {
               "id": "medsim-packs3",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/packs_003.webp",
-              "desc": "<p>Medical equipment pack - props modeled and textured for the training scenarios.</p>",
+              "desc": "<p>Medical equipment props.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -693,7 +693,7 @@ window.CONTENT_DATA = {
               "id": "medsim-packs4",
               "type": "image",
               "src": "media/other-projects/medical-services-simulator/packs_004.webp",
-              "desc": "<p>Medical equipment pack - props modeled and textured for the training scenarios.</p>",
+              "desc": "<p>Medical equipment props.</p>",
               "software": [
                 "maya",
                 "substance"
@@ -704,13 +704,13 @@ window.CONTENT_DATA = {
         {
           "id": "other-ringmatch",
           "title": "RingMatch",
-          "desc": "<p>A casual mobile puzzle game prototype - 3D modeling, texturing and VFX in Unity, plus the logo, UI assets and tutorial graphics.</p>",
+          "desc": "<p>Casual mobile puzzle prototype - 3D modeling, texturing and VFX in Unity, plus logo, UI assets and tutorial graphics.</p>",
           "items": [
             {
               "id": "ringmatch-video",
               "type": "video",
               "src": "media/other-projects/ringmatch/ringmatch_publishervideo.mp4",
-              "desc": "<p>Publisher gameplay video - the game in action.</p>",
+              "desc": "<p>Publisher gameplay video.</p>",
               "software": [
                 "unity",
                 "davinci"
@@ -720,7 +720,7 @@ window.CONTENT_DATA = {
               "id": "ringmatch-logo",
               "type": "image",
               "src": "media/other-projects/ringmatch/logoblue_01.webp",
-              "desc": "<p>Game logo design.</p>",
+              "desc": "<p>Logo.</p>",
               "software": [
                 "illustrator",
                 "photoshop"
@@ -730,7 +730,7 @@ window.CONTENT_DATA = {
               "id": "ringmatch-ui2",
               "type": "image",
               "src": "media/other-projects/ringmatch/rincore_ui_assetspread_02.webp",
-              "desc": "<p>UI asset spread - interface elements and icons.</p>",
+              "desc": "<p>UI asset spread.</p>",
               "software": [
                 "illustrator",
                 "figma"
@@ -740,7 +740,7 @@ window.CONTENT_DATA = {
               "id": "ringmatch-ui3",
               "type": "image",
               "src": "media/other-projects/ringmatch/rincore_ui_assetspread_03.webp",
-              "desc": "<p>UI asset spread -&nbsp;interface elements and icons.</p>",
+              "desc": "<p>UI asset spread.</p>",
               "software": [
                 "illustrator",
                 "figma"
@@ -750,7 +750,7 @@ window.CONTENT_DATA = {
               "id": "ringmatch-tutorial",
               "type": "image",
               "src": "media/other-projects/ringmatch/tutorial-hand-frames_02.webp",
-              "desc": "<p>Tutorial hand animation frames.</p>",
+              "desc": "<p>Tutorial hand frames.</p>",
               "software": [
                 "illustrator",
                 "photoshop"
@@ -767,9 +767,9 @@ window.CONTENT_DATA = {
       "y": -238,
       "h": 384
     },
-    "bio1": "I started as a 3D artist at Clover Bite, working on client projects, mostly semi-realistic simulators, and several mobile game prototypes.<div><b>Went through most of the 3D pipeline - 3D modeling, Terrain & Environments, <br>UVs, textures, VFX and animations</b></div>",
-    "bio2": "For the last 2 years, I formed and led a team inside CB -&nbsp;<br>Developing <i style=\"\">Once a Pawn a King, </i>our debut game for Steam.",
-    "bio3": "Unfortunately, the studio recently closed and the team was let go :( <br><b style=\"\">Now I'm looking for my next place to make great games!</b>",
+    "bio1": "Started as a 3D artist at Clover Bite on client simulators and mobile prototypes -<div><b>modeling, terrain & environments, UVs, textures, VFX and animation.</b></div>",
+    "bio2": "Then formed and led the team behind <i>Once a Pawn a King</i>,<br>our debut Steam title.",
+    "bio3": "The studio has since closed -<br><b>I'm looking for my next place to make great games!</b>",
     "cvPortrait": {
       "top": 23,
       "right": 857,
@@ -779,23 +779,24 @@ window.CONTENT_DATA = {
   "cv": {
     ".cv-entry-org#1": "\n                  <img class=\"cv-org-logo cv-org-logo--screen\" src=\"media/site/cloverbite_logo.webp\" alt=\"Clover Bite\" contenteditable=\"false\">\n                  Clover Bite&nbsp;",
     ".cv-entry-org#3": "\n                  <img class=\"cv-org-logo cv-org-logo--pill\" src=\"media/site/tiltan_logo.webp\" alt=\"Tiltan\" contenteditable=\"false\">\n                  Tiltan School of Design &amp; Visual Communication",
-    ".cv-entry-desc#0": "Generalist 3D workflows: modeling, UV unwrapping, texturing, rigging, animation, shaders, render &amp; lighting. Covered Unity and Unreal Engine basics, 2D design, illustration, UI/UX, and Art theory.",
-    ".cv-entry-bullets li#6": "Reviewed, repaired, and catalogued 3D assets from an archived licensed-IP franchise project.",
-    ".cv-entry-bullets li#7": "Developed character concept models exploring the art direction for the U.S. art team.",
+    ".cv-entry-desc#0": "Generalist 3D: modeling, UVs, texturing, rigging, animation, shaders, rendering &amp; lighting. Plus Unity and Unreal basics, 2D design, illustration, UI/UX and art theory.",
+    ".cv-entry-bullets li#6": "Repaired and catalogued 3D assets from an archived licensed-IP project.",
+    ".cv-entry-bullets li#7": "Character concept models exploring art direction for the U.S. team.",
     ".cv-entry-title#1": "3D Generalist",
     ".cv-entry-date#0": "Jun 2024 - Jun 2026",
     ".cv-entry-date#1": "Jul 2022 - May 2024",
-    ".cv-entry-bullets li#3": "Character modeling and texturing (primarily human characters) + Environment assets creation and Unity terrains and level design.",
+    ".cv-entry-bullets li#3": "Character modeling and texturing (mostly human), environment assets, Unity terrains and level design.",
     ".cv-entry-bullets li#2": "Shipped Once a Pawn a King on Steam.",
-    ".cv-entry-bullets li#1": "Indie production including development of the game + promotional materials and publisher talks.",
-    ".cv-entry-bullets li#0": "Formed and led the core team as team lead / producer, I was also in charge of 3D character art, environments, animations and VFX.",
+    ".cv-entry-bullets li#1": "Ran indie production - development, promotional materials and publisher talks.",
+    ".cv-entry-bullets li#0": "Formed and led the core team as lead / producer; owned 3D character art, environments, animation and VFX.",
     ".cv-section-label#4": "<font size=\"5\">Software</font>",
-    ".cv-summary-text#0": "\n            I'm a game developer and 3D artist who's worked across most of the production pipeline - character modeling, rigging, environment art, real-time VFX, shaders, and UI/UX.<div>Studied 3D art and game design at Tiltan, then spent a few years in their game studio, working on commercial titles and client projects.&nbsp;</div>",
+    ".cv-summary-text#0": "Game developer and 3D artist covering most of the production pipeline - character modeling, rigging, environment art, real-time VFX, shaders and UI/UX.<div>Studied 3D art and game design at Tiltan, then spent four years in its studio on commercial titles and client projects.</div>",
     ".cv-section-label#0": "<font size=\"5\">Summary</font>",
     ".cv-section-label#1": "<font size=\"5\">Skills</font>",
     ".cv-section-label#2": "<font size=\"5\">Experience</font>",
-    ".cv-entry-bullets li#8": "Supported production with asset-library organization and Google sheets.",
-    ".cv-entry-bullets li#4": "Worked on two client projects, a national EMS training simulator and an educational co-op game.",
+    ".cv-entry-bullets li#8": "Asset-library organization and production tracking.",
+    ".cv-entry-bullets li#5": "UI for both, from design to in-engine implementation.",
+    ".cv-entry-bullets li#4": "Two client projects: a national EMS training simulator and an educational co-op game.",
     ".cv-subtitle-sub#0": "<b>3D ART &nbsp;|&nbsp; TECH ART &nbsp;|&nbsp; ANIMATION</b>",
     ".cv-subtitle-main#0": "UNITY GAME ARTIST"
   }
