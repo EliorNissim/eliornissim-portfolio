@@ -2829,3 +2829,126 @@ body.cv-page {
 .acc-bar[data-bar="arcadia"] .acc-sub-desc {
   display: none;
 }
+
+/* =====================================================
+   CV CONTACTS SECTION - email / phone / LinkedIn with icons;
+   the hero keeps only the PDF button above the name
+   ===================================================== */
+.cv-section .cv-contacts {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 32px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding-top: 4px;
+}
+.cv-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.cv-contact svg {
+  flex: none;
+  color: var(--accent-cyan);
+}
+.cv-contact:hover { color: var(--accent-cyan); }
+.cv-contacts .cv-contact span { cursor: inherit; }
+
+@media (max-width: 768px) {
+  .cv-section .cv-contacts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+  }
+}
+@media (hover: none) {
+  .cv-contact:hover { color: inherit; }
+}
+@media print {
+  .cv-section .cv-contacts { flex-direction: row !important; gap: 4px 24px !important; font-size: 11px !important; padding-top: 2px !important; }
+  .cv-contact svg { width: 12px; height: 12px; }
+  .cv-hero-top { display: none !important; }
+}
+
+/* =====================================================
+   HERO v3 - name + titles on the top bar, bio on the bottom
+   bar, showreel sandwiched between them. All three blocks
+   are in normal flow; each bar draws its own jagged edge
+   over the video.
+   ===================================================== */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+.brush-top,
+.brush-bottom { display: none; }
+
+.hero-head,
+.hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  background: var(--bg);
+  text-align: center;
+}
+.hero-head {
+  order: 1;
+  padding: 40px 28px 6px;
+}
+.hero-bg {
+  order: 2;
+  position: relative;
+  inset: auto;
+  height: var(--hero-video-h) !important;
+  flex: none;
+}
+.hero-content {
+  order: 3;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 64px;
+}
+.hero-head .hero-titles-sub { margin-bottom: 0; }
+
+/* Top bar's jagged edge hangs down over the video */
+.hero-head::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - 1px);
+  height: 104px;
+  background: var(--bg);
+  -webkit-mask: url("media/site/halftone-edge-rand.svg") top left / 1920px 104px repeat-x;
+          mask: url("media/site/halftone-edge-rand.svg") top left / 1920px 104px repeat-x;
+  pointer-events: none;
+}
+
+/* Video area is taller now that both edges sit over it */
+:root { --hero-video-h: clamp(380px, min(56.25vw, 72vh), 820px); }
+
+@media (max-width: 768px) {
+  :root { --hero-video-h: calc(56.25vw + 150px); }
+  .hero-head { padding: 28px 20px 4px; }
+  .hero-head::after {
+    height: 91px;
+    -webkit-mask-size: 1674px 91px;
+            mask-size: 1674px 91px;
+  }
+  .hero-content { padding-top: 22px; padding-bottom: 48px; }
+}
+
+/* v3 fixes: blocks span the full width (the old hero centred its children),
+   and the CV's PDF button sits top-right, clear of the portrait */
+.hero-section { align-items: stretch; }
+.hero-bg { width: 100%; }
+@media (min-width: 769px) {
+  .cv-hero-top { justify-content: flex-end; }
+}
