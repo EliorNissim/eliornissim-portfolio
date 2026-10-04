@@ -999,11 +999,12 @@ img, video { max-width: 100%; display: block; }
           mask: radial-gradient(farthest-side, transparent calc(100% - var(--ring-w) - 0.5px), #000 calc(100% - var(--ring-w)));
   pointer-events: none;
 }
-.sw-item[data-level="1"] { --lvl: 1; --lvl-color: var(--accent-gold); }
-.sw-item[data-level="2"] { --lvl: 2; --lvl-color: #e6c22e; }
-.sw-item[data-level="3"] { --lvl: 3; --lvl-color: #e6c22e; }
-.sw-item[data-level="4"] { --lvl: 4; --lvl-color: var(--accent-cyan); }
-.sw-item[data-level="5"] { --lvl: 5; --lvl-color: var(--accent-cyan); }
+.sw-item { --lvl-color: var(--accent-cyan); }
+.sw-item[data-level="1"] { --lvl: 1; }
+.sw-item[data-level="2"] { --lvl: 2; }
+.sw-item[data-level="3"] { --lvl: 3; }
+.sw-item[data-level="4"] { --lvl: 4; }
+.sw-item[data-level="5"] { --lvl: 5; }
 .sw-item:hover .sw-icon-wrap {
   transform: translateY(-2px);
 }
@@ -2158,6 +2159,7 @@ body.edit-mode .hero-portrait.portrait-yield {
 
 /* Keep hero text and the PDF button above the portrait */
 .cv-hero { position: relative; }
+.cv-hero-top,
 .cv-hero-text,
 .cv-download-btn { position: relative; z-index: 1; }
 
@@ -2702,4 +2704,53 @@ body.cv-page {
     #0d0d0f 100%
   );
   background-attachment: fixed;
+}
+
+/* =====================================================
+   CV HEADER v2 - contacts + PDF on top, name below,
+   summary flows on with no label, old Skills hidden
+   ===================================================== */
+.cv-hero {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 26px;
+  border-bottom: none;
+  padding-bottom: 8px;
+}
+.cv-hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.cv-contacts {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.cv-subtitle-sub { margin-bottom: 0; }
+
+.cv-section--summary {
+  grid-template-columns: 1fr;
+  padding-top: 18px;
+}
+
+.cv-section--hidden { display: none !important; }
+
+@media (max-width: 768px) {
+  .cv-hero-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  /* Portrait top lines up with the contacts (hero top padding) */
+  .cv-portrait { top: 40px; }
+}
+
+@media print {
+  .cv-hero { gap: 10px !important; }
+  .cv-contacts { gap: 1px !important; font-size: 11px !important; }
+  .cv-section--summary { grid-template-columns: 1fr !important; padding-top: 4px !important; }
+  .cv-section--hidden { display: none !important; }
 }

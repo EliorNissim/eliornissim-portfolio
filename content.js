@@ -771,7 +771,7 @@ window.CONTENT_DATA = {
     "bio2": "Then formed and led the team behind <i>Once a Pawn a King</i>,<br>our debut Steam title.",
     "bio3": "The studio has since closed -<br><b>I'm looking for my next place to make great games!</b>",
     "cvPortrait": {
-      "top": 23,
+      "top": 64,
       "right": 857,
       "h": 266
     }
@@ -789,12 +789,11 @@ window.CONTENT_DATA = {
     ".cv-entry-bullets li#2": "Shipped Once a Pawn a King on Steam.",
     ".cv-entry-bullets li#1": "Ran indie production - development, promotional materials and publisher talks.",
     ".cv-entry-bullets li#0": "Formed and led the core team as lead / producer; owned 3D character art, environments, animation and VFX.",
-    ".cv-section-label#4": "<font size=\"5\">Education</font>",
-    ".cv-summary-text#0": "Game developer and 3D artist covering most of the production pipeline - character modeling, rigging, environment art, real-time VFX, shaders and UI/UX.<div>Studied 3D art and game design at Tiltan, then spent four years in its studio on commercial titles and client projects.</div>",
-    ".cv-section-label#0": "<font size=\"5\">Summary</font>",
-    ".cv-section-label#1": "<font size=\"5\">Software</font>",
-    ".cv-section-label#3": "<font size=\"5\">Experience</font>",
-    ".cv-section-label#2": "<font size=\"5\">Skills</font>",
+    ".cv-section-label#3": "<font size=\"5\">Education</font>",
+    ".cv-summary-text#0": "Indie game 3D artist &amp; Tech Artist, passionate about making games, and making them look and feel great.<div>Studied 3D art and game design at Tiltan, then spent four years in its studio on commercial titles and client projects.</div>",
+    ".cv-section-label#0": "<font size=\"5\">Skills</font>",
+    ".cv-section-label#2": "<font size=\"5\">Experience</font>",
+    ".cv-section-label#1": "<font size=\"5\">SkillsOLD</font>",
     ".cv-entry-bullets li#8": "Asset-library organization and production tracking.",
     ".cv-entry-bullets li#5": "UI for both, from design to in-engine implementation.",
     ".cv-entry-bullets li#4": "Two client projects: a national EMS training simulator and an educational co-op game.",
