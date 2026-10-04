@@ -977,24 +977,42 @@ img, video { max-width: 100%; display: block; }
 .sw-item:hover { color: var(--text-secondary); }
 
 .sw-icon-wrap {
+  --ring-gap: 4px;      /* space between disc and ring */
+  --ring-w: 3px;        /* ring thickness */
   width: 44px; height: 44px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
+  border-radius: 50%;
   background: var(--bg-card);
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  transition: border-color 0.2s, transform 0.2s;
+  position: relative;
+  transition: transform 0.2s;
 }
+/* Proficiency ring: conic arc from 12 o'clock, 1/5 per level */
+.sw-icon-wrap::before {
+  content: '';
+  position: absolute;
+  inset: calc(-1 * (var(--ring-gap) + var(--ring-w)));
+  border-radius: 50%;
+  background: conic-gradient(var(--lvl-color) calc(var(--lvl) * 20%), var(--border) 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--ring-w) - 0.5px), #000 calc(100% - var(--ring-w)));
+          mask: radial-gradient(farthest-side, transparent calc(100% - var(--ring-w) - 0.5px), #000 calc(100% - var(--ring-w)));
+  pointer-events: none;
+}
+.sw-item[data-level="1"] { --lvl: 1; --lvl-color: var(--accent-gold); }
+.sw-item[data-level="2"] { --lvl: 2; --lvl-color: #e6c22e; }
+.sw-item[data-level="3"] { --lvl: 3; --lvl-color: #e6c22e; }
+.sw-item[data-level="4"] { --lvl: 4; --lvl-color: var(--accent-cyan); }
+.sw-item[data-level="5"] { --lvl: 5; --lvl-color: var(--accent-cyan); }
 .sw-item:hover .sw-icon-wrap {
-  border-color: rgba(64, 160, 128, 0.55);
   transform: translateY(-2px);
 }
 .sw-icon-wrap img,
 .sw-icon-wrap svg {
   width: 30px; height: 30px;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 /* =====================================================
@@ -1811,8 +1829,9 @@ body.edit-mode .hero-portrait.portrait-yield {
   .cv-software-row {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 16px 4px;
+    gap: 18px 4px;
     justify-items: center;
+    padding-top: 6px;
   }
   .sw-item {
     gap: 6px;
@@ -1822,9 +1841,10 @@ body.edit-mode .hero-portrait.portrait-yield {
     text-align: center;
   }
   .sw-icon-wrap {
+    --ring-gap: 3px;
+    --ring-w: 2.5px;
     width: 38px;
     height: 38px;
-    border-radius: 8px;
   }
   .sw-icon-wrap img,
   .sw-icon-wrap svg {
@@ -1881,7 +1901,7 @@ body.edit-mode .hero-portrait.portrait-yield {
   .cv-contacts span:hover { color: inherit; }
   .cv-download-btn:hover { background: none; color: var(--accent-cyan); }
   .sw-item:hover { color: var(--text-muted); }
-  .sw-item:hover .sw-icon-wrap { border-color: var(--border); transform: none; }
+  .sw-item:hover .sw-icon-wrap { transform: none; }
   .sw-badge:hover { border-color: var(--border); }
   .media-card:hover { transform: none; box-shadow: none; }
   .media-card:hover .media-thumb-hover { opacity: 0; }
@@ -2270,8 +2290,8 @@ button.cv-download-btn {
   }
 
   /* Software row back to a single flowing line */
-  .cv-software-row { display: flex !important; flex-wrap: wrap !important; gap: 14px !important; }
-  .sw-icon-wrap { width: 30px !important; height: 30px !important; }
+  .cv-software-row { display: flex !important; flex-wrap: wrap !important; gap: 16px !important; padding-top: 5px !important; }
+  .sw-icon-wrap { width: 30px !important; height: 30px !important; --ring-gap: 3px; --ring-w: 2px; }
   .sw-icon-wrap img, .sw-icon-wrap svg { width: 22px !important; height: 22px !important; }
   .sw-item span { font-size: 8px !important; }
 
