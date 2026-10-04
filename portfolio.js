@@ -748,12 +748,27 @@ function initPortraitEdit(on) {
    "Save as PDF", styled by the @media print rules
    ===================================================== */
 
+// The deployed site ships a PDF pre-rendered by headless Chrome at build time
+// (build-site.sh flips this flag), so every device downloads the same one-page
+// file instead of relying on its own print engine. Locally it falls back to print.
+const CV_PDF_STATIC = true;
+const CV_PDF_URL = 'Elior_Nissim_CV.pdf?b=1791133371';
+
 function initDownloadPdf() {
   const btn = document.getElementById('download-pdf');
   if (!btn) return;
   btn.addEventListener('click', () => {
     // Leave edit mode first so outlines/handles never land in the PDF
     if (editMode) setEditMode(false);
+    if (CV_PDF_STATIC) {
+      const a = document.createElement('a');
+      a.href = CV_PDF_URL;
+      a.download = 'Elior_Nissim_CV.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      return;
+    }
     window.print();
   });
 }

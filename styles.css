@@ -3017,3 +3017,8 @@ body.cv-page {
 }
 /* Optical nudge: the row's centre sat ~2px below the label's cap-height centre */
 .cv-section--contacts .cv-contacts { transform: translateY(-2px); }
+
+/* Showreel [desktop]: the video is half the page width (16:9), strip height follows */
+@media (min-width: 769px) {
+  :root { --hero-video-h: max(300px, 28.125vw); }
+}
