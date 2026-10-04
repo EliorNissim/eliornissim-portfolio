@@ -752,7 +752,7 @@ function initPortraitEdit(on) {
 // (build-site.sh flips this flag), so every device downloads the same one-page
 // file instead of relying on its own print engine. Locally it falls back to print.
 const CV_PDF_STATIC = true;
-const CV_PDF_URL = 'Elior_Nissim_CV.pdf?b=1791133371';
+const CV_PDF_URL = 'Elior_Nissim_CV.pdf?b=1791133823';
 
 function initDownloadPdf() {
   const btn = document.getElementById('download-pdf');

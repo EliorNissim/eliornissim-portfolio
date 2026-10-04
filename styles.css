@@ -3022,3 +3022,10 @@ body.cv-page {
 @media (min-width: 769px) {
   :root { --hero-video-h: max(300px, 28.125vw); }
 }
+
+/* Showreel [desktop]: strip is half the original strip height
+   (original: clamp(380px, min(56.25vw, 72vh), 820px)); video stays 16:9 at
+   that height, centred, sides fading to black */
+@media (min-width: 769px) {
+  :root { --hero-video-h: clamp(190px, min(28.125vw, 36vh), 410px); }
+}
