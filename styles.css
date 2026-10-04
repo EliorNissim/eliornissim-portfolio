@@ -3029,3 +3029,19 @@ body.cv-page {
 @media (min-width: 769px) {
   :root { --hero-video-h: clamp(190px, min(28.125vw, 36vh), 410px); }
 }
+
+/* Showreel [desktop]: as wide as the page (capped at a 16:9 frame of the
+   monitor's height); the side fade only appears on wider-than-16:9 screens */
+@media (min-width: 769px) {
+  .hero-bg-video {
+    width: min(100%, var(--reel-max-w, 100%));
+    aspect-ratio: auto;
+    object-fit: cover;
+    -webkit-mask-image: none;
+            mask-image: none;
+  }
+  .hero-bg.reel-faded .hero-bg-video {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14%, #000 86%, transparent 100%);
+            mask-image: linear-gradient(90deg, transparent 0, #000 14%, #000 86%, transparent 100%);
+  }
+}

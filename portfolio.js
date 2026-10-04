@@ -752,7 +752,7 @@ function initPortraitEdit(on) {
 // (build-site.sh flips this flag), so every device downloads the same one-page
 // file instead of relying on its own print engine. Locally it falls back to print.
 const CV_PDF_STATIC = true;
-const CV_PDF_URL = 'Elior_Nissim_CV.pdf?b=1791133823';
+const CV_PDF_URL = 'Elior_Nissim_CV.pdf?b=1791135845';
 
 function initDownloadPdf() {
   const btn = document.getElementById('download-pdf');
@@ -773,9 +773,23 @@ function initDownloadPdf() {
   });
 }
 
+// Showreel width: full page width, but never wider than a 16:9 frame at the
+// monitor's height. Only on screens wider than 16:9 (ultrawide) is the video
+// narrower than the page - then its sides fade to black. Uses the monitor's
+// shape, not the window's (a maximised window is always wider than 16:9).
+function sizeHeroReel() {
+  const bg = document.querySelector('.hero-bg');
+  if (!bg) return;
+  const maxW = Math.round(screen.height * 16 / 9);
+  bg.style.setProperty('--reel-max-w', maxW + 'px');
+  bg.classList.toggle('reel-faded', bg.clientWidth > maxW + 1);
+}
+
 function initHeroVideo() {
   const vid = document.querySelector('.hero-bg-video');
   if (!vid) return;
+  sizeHeroReel();
+  window.addEventListener('resize', sizeHeroReel);
   const io = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) vid.play().catch(() => {});
