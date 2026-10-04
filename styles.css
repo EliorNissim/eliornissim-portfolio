@@ -3050,3 +3050,53 @@ body.cv-page {
 @media (min-width: 769px) {
   :root { --hero-video-h: 450px; }
 }
+
+/* Showreel strip [desktop]: 500px tall */
+@media (min-width: 769px) {
+  :root { --hero-video-h: 500px; }
+}
+
+/* =====================================================
+   PROFICIENCY RINGS as real SVG circles
+   The old CSS mask ring was dropped by some PDF viewers;
+   vector circles render the same everywhere.
+   ===================================================== */
+.sw-icon-wrap::before { display: none; }
+.sw-ring {
+  position: absolute;
+  top: calc(-1 * (var(--ring-gap) + var(--ring-w)));
+  left: calc(-1 * (var(--ring-gap) + var(--ring-w)));
+  width: calc(100% + 2 * (var(--ring-gap) + var(--ring-w)));
+  height: calc(100% + 2 * (var(--ring-gap) + var(--ring-w)));
+  transform: rotate(-90deg);           /* arc starts at 12 o'clock */
+  overflow: visible;
+  pointer-events: none;
+}
+.sw-ring circle {
+  cx: 50%;
+  cy: 50%;
+  r: calc(50% - var(--ring-w) / 2);
+  fill: none;
+  stroke-width: var(--ring-w);
+}
+.sw-ring-track { stroke: var(--border); }
+.sw-ring-arc {
+  stroke: var(--lvl-color);
+  stroke-dasharray: calc(var(--lvl) * 20) 100;
+}
+
+/* PDF only: portrait twice as big */
+@media print {
+  .cv-portrait { height: 208px !important; }
+}
+/* The icon rule (.sw-icon-wrap svg {30px; position: relative}) must not catch the ring */
+.sw-icon-wrap svg.sw-ring {
+  position: absolute;
+  z-index: 0;
+  width: calc(100% + 2 * (var(--ring-gap) + var(--ring-w))) !important;
+  height: calc(100% + 2 * (var(--ring-gap) + var(--ring-w))) !important;
+}
+/* PDF: the doubled portrait reaches down beside the summary - keep the text clear of it */
+@media print {
+  .cv-section--summary .cv-summary-text { max-width: 450px; }
+}
