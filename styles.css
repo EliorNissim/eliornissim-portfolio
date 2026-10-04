@@ -2754,3 +2754,78 @@ body.cv-page {
   .cv-section--summary { grid-template-columns: 1fr !important; padding-top: 4px !important; }
   .cv-section--hidden { display: none !important; }
 }
+
+/* =====================================================
+   HERO v2 - showreel on top, text on the bottom bar
+   The bottom black bar grows into a solid panel that holds
+   the name, titles and bio, so no text sits over the video.
+   The jagged halftone edge now rides on top of that panel.
+   ===================================================== */
+:root { --hero-video-h: clamp(320px, min(56.25vw, 66vh), 780px); }
+
+.hero-section {
+  display: block;
+  min-height: 0;
+}
+
+/* Video fills only the open area (+ a little under the edge's dots) */
+.hero-bg {
+  height: calc(var(--hero-video-h) + 20px) !important;
+  bottom: auto;
+}
+
+.hero-content {
+  max-width: none;
+  margin-top: var(--hero-video-h);
+  background: var(--bg);
+  padding-top: 34px;
+  padding-bottom: 64px;
+}
+
+/* Jagged halftone edge on top of the panel (same art as the old bottom bar:
+   dots up top, solid zigzag below, 20px solid pad that overlaps the panel) */
+.hero-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -104px;
+  height: 124px;
+  background: var(--bg);
+  -webkit-mask: url("media/site/halftone-edge-bottom.svg") top left / 1920px 124px repeat-x;
+          mask: url("media/site/halftone-edge-bottom.svg") top left / 1920px 124px repeat-x;
+  pointer-events: none;
+}
+
+/* The old bottom bar at the section's foot is now redundant */
+.brush-bottom { display: none; }
+
+@media (max-width: 768px) {
+  :root { --hero-video-h: calc(56.25vw + 120px); }
+
+  .hero-content {
+    padding-top: 26px;
+    padding-bottom: 48px;
+  }
+  .hero-content::before {
+    top: -88px;
+    height: 108px;
+    -webkit-mask-size: 1674px 108px;
+            mask-size: 1674px 108px;
+  }
+
+  /* Phone: let the browser balance each paragraph instead of the desktop
+     line breaks, so no line ends up holding a single word */
+  .hero-bio-sections br { display: none; }
+  .hero-bio-main,
+  .hero-bio-secondary,
+  .hero-bio-closing { text-wrap: balance; }
+}
+
+/* =====================================================
+   Once a Pawn a King + Arcadia: sub-headers only
+   ===================================================== */
+.acc-bar[data-bar="oapak"] .acc-sub-desc,
+.acc-bar[data-bar="arcadia"] .acc-sub-desc {
+  display: none;
+}

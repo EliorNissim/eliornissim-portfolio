@@ -767,9 +767,9 @@ window.CONTENT_DATA = {
       "y": -238,
       "h": 384
     },
-    "bio1": "Started as a 3D artist at Clover Bite<br>on client simulators and mobile prototypes -<div><b>modeling, terrain & environments,<br>UVs, textures, VFX and animation.</b></div>",
-    "bio2": "Then formed and led the team behind <i>Once a Pawn a King</i>,<br>our debut Steam title.",
-    "bio3": "The studio has since closed -<br><b>I'm looking for my next place to make great games!</b>",
+    "bio1": "Started as a 3D artist at Clover Bite<br> on client simulators and mobile prototypes.",
+    "bio2": "Then formed and led the team behind <i>Once a Pawn a King</i>,<br> our debut Steam title.",
+    "bio3": "The studio has since closed -<br> <b>I'm looking for my next place to make great games!</b>",
     "cvPortrait": {
       "top": 64,
       "right": 857,
