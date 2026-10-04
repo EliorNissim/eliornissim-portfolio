@@ -3045,3 +3045,8 @@ body.cv-page {
             mask-image: linear-gradient(90deg, transparent 0, #000 14%, #000 86%, transparent 100%);
   }
 }
+
+/* Showreel strip [desktop]: fixed 450px tall */
+@media (min-width: 769px) {
+  :root { --hero-video-h: 450px; }
+}
